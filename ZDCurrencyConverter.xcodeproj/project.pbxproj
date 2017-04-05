@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8304FA381B6A7976008AEFC4 /* ZDCurrencyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8304FA371B6A7976008AEFC4 /* ZDCurrencyTableViewCell.m */; };
+		834DA5381B6526F800646707 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA5371B6526F800646707 /* main.m */; };
+		834DA53B1B6526F800646707 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA53A1B6526F800646707 /* AppDelegate.m */; };
+		834DA53E1B6526F800646707 /* ZDConverterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA53D1B6526F800646707 /* ZDConverterViewController.m */; };
+		834DA5411B6526F800646707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834DA53F1B6526F800646707 /* Main.storyboard */; };
+		834DA5431B6526F800646707 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834DA5421B6526F800646707 /* Images.xcassets */; };
+		834DA5461B6526F800646707 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 834DA5441B6526F800646707 /* LaunchScreen.xib */; };
+		834DA5521B6526F800646707 /* ZDCurrencyConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA5511B6526F800646707 /* ZDCurrencyConverterTests.m */; };
+		834DA55C1B6528D400646707 /* currencies.json in Resources */ = {isa = PBXBuildFile; fileRef = 834DA55B1B6528D400646707 /* currencies.json */; };
+		834DA55F1B6528F100646707 /* ZDCurrencyUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA55E1B6528F100646707 /* ZDCurrencyUtil.m */; };
+		834DA5641B65361A00646707 /* ZDCurrencyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 834DA5631B65361A00646707 /* ZDCurrencyModel.m */; };
+		834DA5681B65384C00646707 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834DA5671B65384C00646707 /* SystemConfiguration.framework */; };
+		834DA56A1B65386200646707 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834DA5691B65386200646707 /* MobileCoreServices.framework */; };
+		8366B25F1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8366B25E1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.m */; };
+		837CE7061B6679F200E6219A /* ZDKeypadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 837CE7051B6679F200E6219A /* ZDKeypadView.m */; };
+		838C23C11B6BA2EE0047C9A1 /* ZDCurrencyListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 838C23C01B6BA2EE0047C9A1 /* ZDCurrencyListViewController.m */; };
+		83CF979A1BAC80320048BEC1 /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AC874D1B9F3F920088AB9F /* ZendeskSDK.framework */; };
+		83CF979B1BAC80320048BEC1 /* ZendeskSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83AC874D1B9F3F920088AB9F /* ZendeskSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83D254711BAC7C85004F7E8A /* ZendeskSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83AC874D1B9F3F920088AB9F /* ZendeskSDK.framework */; };
+		921144223B64349F2BB1846B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DFB604FCD25BFE67CA1E68 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834DA54C1B6526F800646707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 834DA52A1B6526F800646707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834DA5311B6526F800646707;
+			remoteInfo = ZDCurrencyConverter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83CF979C1BAC80320048BEC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83CF979B1BAC80320048BEC1 /* ZendeskSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0EE902E534B75BD751F7702E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		14DFB604FCD25BFE67CA1E68 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2847C7BD3CCCE01252E01249 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		8304FA361B6A7976008AEFC4 /* ZDCurrencyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCurrencyTableViewCell.h; sourceTree = "<group>"; };
+		8304FA371B6A7976008AEFC4 /* ZDCurrencyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyTableViewCell.m; sourceTree = "<group>"; };
+		834DA5321B6526F800646707 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		834DA5361B6526F800646707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834DA5371B6526F800646707 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		834DA5391B6526F800646707 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		834DA53A1B6526F800646707 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		834DA53C1B6526F800646707 /* ZDConverterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDConverterViewController.h; sourceTree = "<group>"; };
+		834DA53D1B6526F800646707 /* ZDConverterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDConverterViewController.m; sourceTree = "<group>"; };
+		834DA5401B6526F800646707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		834DA5421B6526F800646707 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		834DA5451B6526F800646707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		834DA54B1B6526F800646707 /* ZDCurrencyConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZDCurrencyConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834DA5501B6526F800646707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834DA5511B6526F800646707 /* ZDCurrencyConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyConverterTests.m; sourceTree = "<group>"; };
+		834DA55B1B6528D400646707 /* currencies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = currencies.json; sourceTree = "<group>"; };
+		834DA55D1B6528F100646707 /* ZDCurrencyUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCurrencyUtil.h; sourceTree = "<group>"; };
+		834DA55E1B6528F100646707 /* ZDCurrencyUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyUtil.m; sourceTree = "<group>"; };
+		834DA5621B65361A00646707 /* ZDCurrencyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCurrencyModel.h; sourceTree = "<group>"; };
+		834DA5631B65361A00646707 /* ZDCurrencyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyModel.m; sourceTree = "<group>"; };
+		834DA5651B65383200646707 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		834DA5671B65384C00646707 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		834DA5691B65386200646707 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		8366B25D1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCurrencyDisplayView.h; sourceTree = "<group>"; };
+		8366B25E1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyDisplayView.m; sourceTree = "<group>"; };
+		837CE6F71B662B5900E6219A /* MockUps.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MockUps.storyboard; sourceTree = "<group>"; };
+		837CE7041B6679F200E6219A /* ZDKeypadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDKeypadView.h; sourceTree = "<group>"; };
+		837CE7051B6679F200E6219A /* ZDKeypadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDKeypadView.m; sourceTree = "<group>"; };
+		838C23BF1B6BA2EE0047C9A1 /* ZDCurrencyListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDCurrencyListViewController.h; sourceTree = "<group>"; };
+		838C23C01B6BA2EE0047C9A1 /* ZDCurrencyListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDCurrencyListViewController.m; sourceTree = "<group>"; };
+		83AC874D1B9F3F920088AB9F /* ZendeskSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZendeskSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834DA52F1B6526F800646707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CF979A1BAC80320048BEC1 /* ZendeskSDK.framework in Frameworks */,
+				83D254711BAC7C85004F7E8A /* ZendeskSDK.framework in Frameworks */,
+				834DA56A1B65386200646707 /* MobileCoreServices.framework in Frameworks */,
+				834DA5681B65384C00646707 /* SystemConfiguration.framework in Frameworks */,
+				921144223B64349F2BB1846B /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834DA5481B6526F800646707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05CC645E4810662FD60C3CEC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0EE902E534B75BD751F7702E /* Pods.debug.xcconfig */,
+				2847C7BD3CCCE01252E01249 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8304FA391B6A7981008AEFC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				837CE7041B6679F200E6219A /* ZDKeypadView.h */,
+				837CE7051B6679F200E6219A /* ZDKeypadView.m */,
+				8366B25D1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.h */,
+				8366B25E1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.m */,
+				8304FA361B6A7976008AEFC4 /* ZDCurrencyTableViewCell.h */,
+				8304FA371B6A7976008AEFC4 /* ZDCurrencyTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		834DA5291B6526F800646707 = {
+			isa = PBXGroup;
+			children = (
+				834DA5341B6526F800646707 /* ZDCurrencyConverter */,
+				834DA54E1B6526F800646707 /* ZDCurrencyConverterTests */,
+				834DA5331B6526F800646707 /* Products */,
+				05CC645E4810662FD60C3CEC /* Pods */,
+				8C8CE4E6A91666FF6ED78680 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		834DA5331B6526F800646707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				834DA5321B6526F800646707 /* Currency Converter.app */,
+				834DA54B1B6526F800646707 /* ZDCurrencyConverterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		834DA5341B6526F800646707 /* ZDCurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				8304FA391B6A7981008AEFC4 /* View */,
+				834DA5611B6534C800646707 /* Controller */,
+				834DA5601B6534C200646707 /* Model */,
+				834DA5391B6526F800646707 /* AppDelegate.h */,
+				834DA53A1B6526F800646707 /* AppDelegate.m */,
+				834DA53F1B6526F800646707 /* Main.storyboard */,
+				837CE6F71B662B5900E6219A /* MockUps.storyboard */,
+				834DA5421B6526F800646707 /* Images.xcassets */,
+				834DA5441B6526F800646707 /* LaunchScreen.xib */,
+				834DA5351B6526F800646707 /* Supporting Files */,
+			);
+			path = ZDCurrencyConverter;
+			sourceTree = "<group>";
+		};
+		834DA5351B6526F800646707 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834DA55B1B6528D400646707 /* currencies.json */,
+				834DA5361B6526F800646707 /* Info.plist */,
+				834DA5371B6526F800646707 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834DA54E1B6526F800646707 /* ZDCurrencyConverterTests */ = {
+			isa = PBXGroup;
+			children = (
+				834DA5511B6526F800646707 /* ZDCurrencyConverterTests.m */,
+				834DA54F1B6526F800646707 /* Supporting Files */,
+			);
+			path = ZDCurrencyConverterTests;
+			sourceTree = "<group>";
+		};
+		834DA54F1B6526F800646707 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				834DA5501B6526F800646707 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		834DA5601B6534C200646707 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				834DA5621B65361A00646707 /* ZDCurrencyModel.h */,
+				834DA5631B65361A00646707 /* ZDCurrencyModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		834DA5611B6534C800646707 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				834DA53C1B6526F800646707 /* ZDConverterViewController.h */,
+				834DA53D1B6526F800646707 /* ZDConverterViewController.m */,
+				838C23BF1B6BA2EE0047C9A1 /* ZDCurrencyListViewController.h */,
+				838C23C01B6BA2EE0047C9A1 /* ZDCurrencyListViewController.m */,
+				834DA55D1B6528F100646707 /* ZDCurrencyUtil.h */,
+				834DA55E1B6528F100646707 /* ZDCurrencyUtil.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8C8CE4E6A91666FF6ED78680 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83AC874D1B9F3F920088AB9F /* ZendeskSDK.framework */,
+				834DA5691B65386200646707 /* MobileCoreServices.framework */,
+				834DA5671B65384C00646707 /* SystemConfiguration.framework */,
+				834DA5651B65383200646707 /* Security.framework */,
+				14DFB604FCD25BFE67CA1E68 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		834DA5311B6526F800646707 /* ZDCurrencyConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834DA5551B6526F800646707 /* Build configuration list for PBXNativeTarget "ZDCurrencyConverter" */;
+			buildPhases = (
+				938F2CE1DD37A19D6FAEE7F2 /* Check Pods Manifest.lock */,
+				834DA52E1B6526F800646707 /* Sources */,
+				834DA52F1B6526F800646707 /* Frameworks */,
+				834DA5301B6526F800646707 /* Resources */,
+				9349403C35B5879DB00C6913 /* Copy Pods Resources */,
+				83CF979C1BAC80320048BEC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZDCurrencyConverter;
+			productName = ZDCurrencyConverter;
+			productReference = 834DA5321B6526F800646707 /* Currency Converter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		834DA54A1B6526F800646707 /* ZDCurrencyConverterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834DA5581B6526F800646707 /* Build configuration list for PBXNativeTarget "ZDCurrencyConverterTests" */;
+			buildPhases = (
+				834DA5471B6526F800646707 /* Sources */,
+				834DA5481B6526F800646707 /* Frameworks */,
+				834DA5491B6526F800646707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834DA54D1B6526F800646707 /* PBXTargetDependency */,
+			);
+			name = ZDCurrencyConverterTests;
+			productName = ZDCurrencyConverterTests;
+			productReference = 834DA54B1B6526F800646707 /* ZDCurrencyConverterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		834DA52A1B6526F800646707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Steven Diviney";
+				TargetAttributes = {
+					834DA5311B6526F800646707 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7529UAQB93;
+					};
+					834DA54A1B6526F800646707 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 834DA5311B6526F800646707;
+					};
+				};
+			};
+			buildConfigurationList = 834DA52D1B6526F800646707 /* Build configuration list for PBXProject "ZDCurrencyConverter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 834DA5291B6526F800646707;
+			productRefGroup = 834DA5331B6526F800646707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				834DA5311B6526F800646707 /* ZDCurrencyConverter */,
+				834DA54A1B6526F800646707 /* ZDCurrencyConverterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834DA5301B6526F800646707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834DA5411B6526F800646707 /* Main.storyboard in Resources */,
+				834DA5461B6526F800646707 /* LaunchScreen.xib in Resources */,
+				834DA55C1B6528D400646707 /* currencies.json in Resources */,
+				834DA5431B6526F800646707 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834DA5491B6526F800646707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9349403C35B5879DB00C6913 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		938F2CE1DD37A19D6FAEE7F2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834DA52E1B6526F800646707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8304FA381B6A7976008AEFC4 /* ZDCurrencyTableViewCell.m in Sources */,
+				834DA53E1B6526F800646707 /* ZDConverterViewController.m in Sources */,
+				834DA53B1B6526F800646707 /* AppDelegate.m in Sources */,
+				834DA55F1B6528F100646707 /* ZDCurrencyUtil.m in Sources */,
+				837CE7061B6679F200E6219A /* ZDKeypadView.m in Sources */,
+				834DA5381B6526F800646707 /* main.m in Sources */,
+				838C23C11B6BA2EE0047C9A1 /* ZDCurrencyListViewController.m in Sources */,
+				834DA5641B65361A00646707 /* ZDCurrencyModel.m in Sources */,
+				8366B25F1B66C8A700FB2EF1 /* ZDCurrencyDisplayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834DA5471B6526F800646707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834DA5521B6526F800646707 /* ZDCurrencyConverterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834DA54D1B6526F800646707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834DA5311B6526F800646707 /* ZDCurrencyConverter */;
+			targetProxy = 834DA54C1B6526F800646707 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834DA53F1B6526F800646707 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834DA5401B6526F800646707 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		834DA5441B6526F800646707 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834DA5451B6526F800646707 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834DA5531B6526F800646707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		834DA5541B6526F800646707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		834DA5561B6526F800646707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE902E534B75BD751F7702E /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ZDCurrencyConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Currency Converter";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		834DA5571B6526F800646707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2847C7BD3CCCE01252E01249 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = ZDCurrencyConverter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Currency Converter";
+				SKIP_INSTALL = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		834DA5591B6526F800646707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZDCurrencyConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDCurrencyConverter.app/ZDCurrencyConverter";
+			};
+			name = Debug;
+		};
+		834DA55A1B6526F800646707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZDCurrencyConverterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zendesk.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZDCurrencyConverter.app/ZDCurrencyConverter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834DA52D1B6526F800646707 /* Build configuration list for PBXProject "ZDCurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834DA5531B6526F800646707 /* Debug */,
+				834DA5541B6526F800646707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834DA5551B6526F800646707 /* Build configuration list for PBXNativeTarget "ZDCurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834DA5561B6526F800646707 /* Debug */,
+				834DA5571B6526F800646707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834DA5581B6526F800646707 /* Build configuration list for PBXNativeTarget "ZDCurrencyConverterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834DA5591B6526F800646707 /* Debug */,
+				834DA55A1B6526F800646707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 834DA52A1B6526F800646707 /* Project object */;
+}
